@@ -1,0 +1,209 @@
+header {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .write_me {
+  width: 180px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .write_me a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eeeeee;
+  background: transparent;
+  font-family: fantasy;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+}
+
+header .write_me a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 49.5%;
+  height: 1px;
+  background: #fff;
+}
+
+header .write_me a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: 50.5%;
+  height: 1px;
+  background: #fff;
+}
+
+header .write_me a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+header .write_me a:hover .animation_layer::after {
+  -webkit-animation: in .3s linear;
+          animation: in .3s linear;
+  left: 0%;
+}
+
+header .write_me a .animation_layer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: skewX(-27deg);
+          transform: skewX(-27deg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header .write_me a .animation_layer::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: out .3s linear;
+          animation: out .3s linear;
+}
+
+header .write_me a .text {
+  mix-blend-mode: difference;
+}
+
+header .write_me a .border_layer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: skewX(-27deg);
+          transform: skewX(-27deg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header .write_me a .border_layer::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  background: #fff;
+  top: -3px;
+  right: 0;
+}
+
+header .write_me a .border_layer::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  background: #fff;
+  left: -2px;
+  bottom: 0;
+}
+
+@-webkit-keyframes out {
+  0% {
+    width: 50%;
+    left: 0%;
+  }
+  50% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 50%;
+    left: 50%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 50%;
+    left: 0%;
+  }
+  50% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 50%;
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes in {
+  0% {
+    width: 50%;
+    left: 50%;
+  }
+  50% {
+    width: 0%;
+    left: 50%;
+  }
+  100% {
+    width: 50%;
+    left: 0%;
+  }
+}
+
+@keyframes in {
+  0% {
+    width: 50%;
+    left: 50%;
+  }
+  50% {
+    width: 0%;
+    left: 50%;
+  }
+  100% {
+    width: 50%;
+    left: 0%;
+  }
+}
+/*# sourceMappingURL=componentStyle.module.css.map */

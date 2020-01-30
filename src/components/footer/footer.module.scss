@@ -1,0 +1,36 @@
+$bg-color: #141414;
+$text-color: #eeeeee;
+$black: #000;
+.footer_overlay {
+	width: 100%;
+	height: 80px;
+	background: transparent;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	&:hover .footer {
+		transform: translateY(0);
+	}
+
+	.footer {
+		width: 100%;
+		height: 100%;
+		background: $black;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translateY(80px);
+		transition: .3s linear;
+
+		.content {
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+		}
+	}
+}

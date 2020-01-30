@@ -1,0 +1,167 @@
+.profilePhoto {
+  position: absolute;
+  top: 0px;
+  left: -53px;
+}
+
+.profilePhoto .overlay {
+  width: 250px;
+  height: 170px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(77% 0%, 95% 47.5%, 80% 100%, 50% 100%, 0% 100%, 0% 1%, 0% 0%);
+          clip-path: polygon(77% 0%, 95% 47.5%, 80% 100%, 50% 100%, 0% 100%, 0% 1%, 0% 0%);
+}
+
+.profilePhoto .overlay .photo1 {
+  width: 250px;
+  height: 160px;
+  background-image: url("../../img/prophile-photo.jpg");
+  background-size: cover;
+  position: relative;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.profilePhoto .overlay .photo1::before {
+  content: '';
+  width: 250px;
+  height: 15px;
+  background-image: url("../../img/prophile-photo.jpg");
+  background-size: cover;
+  position: absolute;
+  opacity: .7;
+  -webkit-animation: glitch1 4s infinite linear;
+          animation: glitch1 4s infinite linear;
+}
+
+.profilePhoto .overlay .photo1::after {
+  content: '';
+  width: 250px;
+  height: 160px;
+  background-image: url("../../img/prophile-photo.jpg");
+  background-size: cover;
+  position: absolute;
+  opacity: .5;
+  -webkit-animation: glitch2 10s infinite linear;
+          animation: glitch2 10s infinite linear;
+  mix-blend-mode: hard-light;
+}
+
+@-webkit-keyframes glitch1 {
+  0% {
+    top: -30px;
+  }
+  50% {
+    top: -30px;
+    height: 5px;
+  }
+  60% {
+    top: 30px;
+    background-position: 0px -30px;
+    height: 15px;
+  }
+  70% {
+    top: 60px;
+    background-position: -5px -60px;
+  }
+  80% {
+    top: 90px;
+    background-position: 3px -90px;
+    height: 5px;
+  }
+  90% {
+    top: 120px;
+    background-position: -5px -120px;
+  }
+  100% {
+    top: 150px;
+    background-position: 0px -150px;
+  }
+}
+
+@keyframes glitch1 {
+  0% {
+    top: -30px;
+  }
+  50% {
+    top: -30px;
+    height: 5px;
+  }
+  60% {
+    top: 30px;
+    background-position: 0px -30px;
+    height: 15px;
+  }
+  70% {
+    top: 60px;
+    background-position: -5px -60px;
+  }
+  80% {
+    top: 90px;
+    background-position: 3px -90px;
+    height: 5px;
+  }
+  90% {
+    top: 120px;
+    background-position: -5px -120px;
+  }
+  100% {
+    top: 150px;
+    background-position: 0px -150px;
+  }
+}
+
+@-webkit-keyframes glitch2 {
+  0% {
+    background-position: 0 0;
+  }
+  2% {
+    background-position: 0px 0;
+  }
+  3% {
+    background-position: -5px -2px;
+  }
+  7% {
+    background-position: 3px 4px;
+  }
+  12% {
+    background-position: 0 0;
+  }
+  15% {
+    background-position: -5px -4px;
+  }
+  17% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    background-position: 0 0;
+  }
+  2% {
+    background-position: 0px 0;
+  }
+  3% {
+    background-position: -5px -2px;
+  }
+  7% {
+    background-position: 3px 4px;
+  }
+  12% {
+    background-position: 0 0;
+  }
+  15% {
+    background-position: -5px -4px;
+  }
+  17% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*# sourceMappingURL=profilePhoto.module.css.map */
