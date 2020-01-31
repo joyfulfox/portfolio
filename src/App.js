@@ -17,10 +17,10 @@ export const App = () => {
           <Header />
           <div className='content_box'>
             <Switch>
-              <Route exact path='/portfolio/' component={Home} />
-              <Route exact path='/portfolio/projects' component={Projects} />
-              <Route exact path='/portfolio/about_me' component={AboutMe} />
-              <Route exact path='/portfolio/contacts' component={Contacts} />
+              <Route exact path='/' component={Home} />
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/about_me' component={AboutMe} />
+              <Route exact path='/contacts' component={Contacts} />
               <Route path='/' render={() => <div>Error 404</div>} />
             </Switch>
           </div>

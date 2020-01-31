@@ -11,7 +11,7 @@ export const Header = () => {
             <ProfilePhoto />
             <NavBar />
             <div className={style.write_me}>
-                <NavLink to='/contacts'>
+                <NavLink to='/portfolio/contacts'>
                     <span className={style.animation_layer} />
                     <span className={style.text}>write me</span>
                     <span className={style.border_layer} />
