@@ -5,13 +5,13 @@ export class Contacts extends Component {
         super(props);
         this.state = {
             values: {
-                host: "smtp.ukr.net",
-                port: 25,
+                host: "smtp.gmail.com",
+                port: 465,
                 from: "",
                 to: "dmitryboltivets@gmail.com",
                 subject: "This mail from",
                 message: "",
-                username: "guestmessage@ukr.net"
+                username: "guestfromportfolio@gmail.com"
             }
         };
     }
