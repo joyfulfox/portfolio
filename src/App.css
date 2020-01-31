@@ -319,7 +319,8 @@
 }
 
 .wrap .container .content_box .contacts_comp .form_container form .form_button_overlay .form_button:focus {
-  border: 1px solid #004e41;
+  border: 1px solid #eeeeee;
+  color: #eeeeee;
 }
 
 .wrap .container .content_box .contacts_comp .form_container form .form_button_overlay .form_button::before, .wrap .container .content_box .contacts_comp .form_container form .form_button_overlay .form_button::after {

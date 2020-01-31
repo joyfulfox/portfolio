@@ -6,19 +6,18 @@ export class Contacts extends Component {
         this.state = {
             values: {
                 host: "smtp.gmail.com",
-                port: 465,
+                port: "587",
                 from: "",
                 to: "dmitryboltivets@gmail.com",
                 subject: "This mail from",
                 message: "",
-                username: "guestfromportfolio@gmail.com"
+                username: "guestfromportfolio"
             }
         };
     }
 
     submitForm = async e => {
         e.preventDefault();
-        console.log(JSON.stringify(this.state.values))
         await fetch("https://bostonaqua.pythonanywhere.com/api/sendmail", {
             method: "POST",
             body: JSON.stringify(this.state.values),
@@ -35,13 +34,14 @@ export class Contacts extends Component {
             })
             .catch(error => error)
     }
-    handleInputChange = e =>
+    handleInputChange = e => {
+        const value = e.target.value.replace(/"/gm, "'");
         this.setState({
-            values: { ...this.state.values, [e.target.name]: e.target.value }
+            values: { ...this.state.values, [e.target.name]: value }
         });
+    }
 
     render() {
-
         return (
             <div className='contacts_comp'>
                 <div className='contacts'>
