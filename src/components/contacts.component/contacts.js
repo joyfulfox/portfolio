@@ -48,7 +48,7 @@ export class Contacts extends Component {
                     <div className='contacts_content_box'>
                         <p>Email: dmitryboltivets@gmail.com</p>
                         <p><a href='https://www.linkedin.com/in/dmitry-boltivets-4bb512192' target='blank'>LinkedIn: https://www.linkedin.com</a></p>
-                        <p>Telegram: @annoying_silence</p>
+                        <p>Telegram: @joyfulfox</p>
                     </div>
                 </div>
                 <div className='form_container'>
